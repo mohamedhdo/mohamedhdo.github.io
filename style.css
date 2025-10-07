@@ -22,6 +22,7 @@ header{
     padding: 1rem 0.5rem;
     border: 1px solid #ffffff33;
     border-radius: 15px;
+    overflow: auto;
 }
 header img{
     width: 100px;
@@ -31,6 +32,7 @@ header img{
     display: flex;
     gap: 1rem;
     list-style-type: none;
+    overflow: auto;
 }
 #navbar a{
     text-decoration: none;
@@ -54,6 +56,7 @@ header img{
     padding: 30px 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6),
                 0 0 6px rgba(255, 255, 255, 0.05);
+    overflow: auto;
 }
 #description:hover{
     background-color: rgba(255, 255, 255, 0.25);
@@ -84,6 +87,7 @@ header img{
     padding: 30px 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6),
                 0 0 6px rgba(255, 255, 255, 0.05);
+    overflow: auto;
 }
 #techstack:hover{
     background-color: rgba(255, 255, 255, 0.25);
@@ -116,6 +120,8 @@ header img{
 
 #imag img{
     height: 300px;
+    max-width: 100%;
+    max-height: 100%;
     width: 300px;
 }
 #proj{
@@ -132,6 +138,7 @@ header img{
     width: 100%;
     padding: 1rem;
     color: #fed7aa;
+    overflow: auto;
 }
 #grid{
     display: grid;
@@ -188,7 +195,9 @@ header img{
 }
 #mg img{
     height: 200px;
+    max-width: 100%;
     width: 200px;
+    max-height: 100%;
 }
 #links{
     background-color: #ffffff1a;
@@ -200,6 +209,7 @@ header img{
     align-items: center;
     gap: 15px;
     padding: 10px 0;
+    overflow: auto;
 }
 #links #txt{
     color: white;
@@ -222,4 +232,27 @@ header img{
     text-decoration: none;
     font-size: 30px;
     
+}
+
+
+@media (max-width: 700px) {
+    
+#aboutme{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#me{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 }
