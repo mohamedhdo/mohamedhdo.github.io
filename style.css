@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;;
+}
+body{
+    background-color: #151515;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;    
+    margin: 30px auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+}
+header img{
+    width: 100px;
+    height: 50px;
+}
+#navbar{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+#navbar a{
+    text-decoration: none;
+    color: #fed7aa;
+}
+#navbar a:hover{
+    color: orange;
+}
+#aboutme{
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+}
+#description{
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+    background-color: #ffffff1a;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6),
+                0 0 6px rgba(255, 255, 255, 0.05);
+}
+#description:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+#description p{
+    color: white;
+}
+#description #name{
+    color: #fed7aa;
+    font-size: 40px;
+}
+#description span{
+    color: #fed7aa;
+}
+#description span:hover{
+    color: orange;
+    cursor: default;
+}
+
+#techstack{
+    color: #fed7aa;
+    font-size: 30px;
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+    background-color: #ffffff1a;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6),
+                0 0 6px rgba(255, 255, 255, 0.05);
+}
+#techstack:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+#techstack ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+#techstack ul li{
+    font-size: 3.5rem;
+}
+#imag{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+    background-color: #ffffff1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6),
+                0 0 6px rgba(255, 255, 255, 0.05);
+}
+#imag:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#imag img{
+    height: 300px;
+    width: 300px;
+}
+#proj{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1rem;
+    color: #fed7aa;
+}
+#grid{
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    gap: 10px;
+}
+.project{
+    height: 350px;
+    border: 1px solid #ffffff33;
+    background-color: #ffffff1a;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.project:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.project #desc{
+    padding-left: 5px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.project #title{
+    padding-left: 5px;
+    color: #fed7aa;
+    font-size: 20px;
+}
+.project img{
+    height: 220px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+#contactme{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#me{
+    display: grid;
+    grid-template-columns: calc(30% - 5px) calc(70% - 5px);
+    gap: 10px;
+}
+#mg{
+    background-color: #ffffff1a;
+    height: 200px;
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mg img{
+    height: 200px;
+    width: 200px;
+}
+#links{
+    background-color: #ffffff1a;
+    height: 200px;
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+#links #txt{
+    color: white;
+}
+#links p{
+    font-size: 20px;
+    color: #fed7aa;
+}
+#links #email:hover{
+    color: orange;
+    cursor: default;
+}
+#links ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    gap: 30px;
+}
+#links a{
+    text-decoration: none;
+    font-size: 30px;
+    
+}
